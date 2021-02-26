@@ -1,1 +1,44 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
+
+body {
+  background-color: green;
+}
+
+.card_black {
+  display: inline-block;
+  width: 150px;
+  height: 250px;
+  background-color: white;
+  position: relative;
+  border: 1px solid black;
+  text-align: center;
+  line-height: 80px;
+  border-radius: 5px;
+}
+.card_red {
+  display: inline-block;
+  width: 150px;
+  height: 250px;
+  background-color: white;
+  position: relative;
+  border: 1px solid red;
+  text-align: center;
+  line-height: 80px;
+  border-radius: 5px;
+}
+.card:after {
+  font-size: 90%;
+  font-weight: bold;
+}
+
+.spades,
+.spades:after {
+  content: "♤";
+  color: black;
+}
+
+.heart,
+.heart:after {
+  content: "♡";
+  color: red;
+}
